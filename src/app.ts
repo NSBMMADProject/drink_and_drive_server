@@ -70,7 +70,7 @@ const startServer = async () => {
     await sequelize.sync();
     console.log("Database synchronized");
 
-    // Start server
+    // Start servesr
     app.listen(PORT);
     console.log(`🦊 Elysia server is running on port ${PORT}`);
   } catch (error) {
