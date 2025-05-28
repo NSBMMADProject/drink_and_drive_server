@@ -5,7 +5,7 @@ import * as bcrypt from "bcryptjs";
 const authRoutes = new Elysia({ prefix: "/api/auth" })
   .post(
     "/register",
-    async ({ body, jwt, set }) => {
+    async ({ body, jwt, set }: { body: any; jwt: any; set: any }) => {
       try {
         const { username, email, password } = body;
 
